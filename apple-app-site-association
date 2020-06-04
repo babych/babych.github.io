@@ -11,11 +11,8 @@
             },
             {
             "appID": "2MHFJN24QZ.com.deloitte.dnmobile.AI.UAT",
-            "paths": ["*"]
-            },
-            {
-            "appID": "TZ5BMUD3ET.com.deloitte.dnmobile.AI.UAT",
-            "paths": ["*"]
-        }]
+            "paths": ["/feeditems/"]
+            }
+	]
     }
 }

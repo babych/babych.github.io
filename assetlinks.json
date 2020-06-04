@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.deloitte.dnmobile.ai.uat",
+    "sha256_cert_fingerprints":
+    ["28:56:8F:4C:A4:D5:71:F2:DE:A9:B2:9F:DC:1F:43:FC:B5:DC:B3:6B:4D:A1:54:4A:89:87:1B:83:85:23:AD:EE"]
+  }
+}]

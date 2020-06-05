@@ -8,10 +8,6 @@
             {
             "appID": "2MHFJN24QZ.com.deloitte.dnmobile.AI",
             "paths": ["/feeditems/*"]
-            },
-            {
-            "appID": "2MHFJN24QZ.com.deloitte.dnmobile.AI.UAT",
-            "paths": ["/feeditems/*"]
             }
 	]
     }

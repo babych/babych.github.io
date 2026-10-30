@@ -14,6 +14,7 @@
       --muted: #8b949e;
       --accent: #58a6ff;
       --green: #238636;
+      --purple: #8b5cf6;
     }
     * { box-sizing: border-box; }
     body {
@@ -156,6 +157,13 @@
     .btn-green:hover {
       background: #2ea043;
     }
+    .btn-purple {
+      background: #7c3aed;
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    .btn-purple:hover {
+      background: #8b5cf6;
+    }
     footer {
       margin-top: 60px;
       padding-top: 24px;
@@ -183,7 +191,7 @@
       <div class="card">
         <div>
           <div class="card-title">🚗 Car Vibration & Pulse Analyzer</div>
-          <p class="card-desc">Real-time vibration spectral diagnosis (FFT, Hanning window, vehicle kinematics) and resting pulse seismocardiography via smartphone accelerometer.</p>
+          <p class="card-desc">Real-time vibration spectral diagnosis (FFT, vehicle kinematics) and resting pulse seismocardiography via smartphone accelerometer.</p>
           <div class="card-tags">
             <span class="tag">Cloudflare Worker</span>
             <span class="tag">Pyodide</span>
@@ -192,6 +200,32 @@
           </div>
         </div>
         <a class="btn btn-green" href="https://car-vibration-analyzer.memory1024.workers.dev" target="_blank">🚀 Launch App</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">🎨 AuraStudio AI Creative Suite</div>
+          <p class="card-desc">AI Inpainting and styling platform with Qwen 2.5 DiT generative synthesis, identity retention, and Telegram Stars payments.</p>
+          <div class="card-tags">
+            <span class="tag">Cloudflare Worker</span>
+            <span class="tag">Qwen 2.5 DiT</span>
+            <span class="tag">Telegram Bot</span>
+          </div>
+        </div>
+        <a class="btn btn-purple" href="https://aurastudio-ai.memory1024.workers.dev/" target="_blank">✨ Launch AuraStudio</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">🐄 Dairy Farm Cloud Portal</div>
+          <p class="card-desc">Modern herd management cloud platform with reverse-engineered analytics, live metrics dashboard, and production deployment.</p>
+          <div class="card-tags">
+            <span class="tag">Cloudflare Pages</span>
+            <span class="tag">Analytics</span>
+            <span class="tag">AgTech</span>
+          </div>
+        </div>
+        <a class="btn btn-green" href="https://dairy-farm-portal.pages.dev" target="_blank">🌐 Live Portal</a>
       </div>
 
       <div class="card">
@@ -218,19 +252,6 @@
           </div>
         </div>
         <a class="btn" href="/playground/">🎮 Open Playground</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <div class="card-title">🐄 Dairy Farm Portal</div>
-          <p class="card-desc">Modern herd management system architecture and cloud portal with advanced reverse-engineered analytics.</p>
-          <div class="card-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Data Architecture</span>
-            <span class="tag">Cloud Portal</span>
-          </div>
-        </div>
-        <a class="btn" href="https://github.com/babych/dairy-farm-portal" target="_blank">🐙 GitHub Repo</a>
       </div>
     </div>
 

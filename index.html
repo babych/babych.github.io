@@ -1,6 +1,242 @@
-<h1>Hello</h1>
-<a href="https://babych.github.io">babych.github.io</a><br/>
-<a href="https://babych.github.io/feeditems">babych.github.io/feeditems</a><br/>
-<a href="https://babych.github.io/feeditems/asd">babych.github.io/feeditems/asd</a><br/>
-<a href="https://babych.github.io/feeditems/eyJJdGVtVHlwZSI6MywgIkl0ZW1JZCI6NjIxOX0=">babych.github.io/feeditems/feeditems/eyJJdGVtVHlwZSI6MywgIkl0ZW1JZCI6NjIxOX0=</a><br/>
-<a href="/feeditems/eyJJdGVtVHlwZSI6MywgIkl0ZW1JZCI6NjIxOX0=">/feeditems/feeditems/eyJJdGVtVHlwZSI6MywgIkl0ZW1JZCI6NjIxOX0=</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dmytro Babych | Engineering & AI Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #090d13;
+      --card-bg: #161b22;
+      --card-border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --green: #238636;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .profile-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(88, 166, 255, 0.1);
+      border: 1px solid var(--accent);
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 10px 0;
+      color: #fff;
+    }
+    .bio {
+      font-size: 16px;
+      color: var(--muted);
+      margin: 0 0 20px 0;
+      max-width: 650px;
+    }
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: border-color 0.2s;
+    }
+    .social-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 36px 0 18px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+      color: #fff;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      background: #0d1117;
+      border-radius: 6px;
+      color: var(--muted);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #21262d;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 13px;
+      text-decoration: none;
+      border: 1px solid var(--card-border);
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn:hover {
+      background: #30363d;
+      border-color: var(--accent);
+    }
+    .btn-green {
+      background: #238636;
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    .btn-green:hover {
+      background: #2ea043;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--card-border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="profile-badge">🚀 Software & AI Engineer</div>
+      <h1>Dmytro Babych</h1>
+      <p class="bio">Specializing in high-performance cloud architectures, real-time signal processing (FFT / Kinematics), LLM orchestration, and modern agentic web platforms.</p>
+      <div class="social-links">
+        <a class="social-link" href="https://github.com/babych" target="_blank"><i class="fab fa-github"></i> GitHub (@babych)</a>
+        <a class="social-link" href="/playground/"><i class="fas fa-gamepad"></i> Interactive Playground</a>
+      </div>
+    </header>
+
+    <div class="section-title">⭐ Flagship Deployments</div>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <div class="card-title">🚗 Car Vibration & Pulse Analyzer</div>
+          <p class="card-desc">Real-time vibration spectral diagnosis (FFT, Hanning window, vehicle kinematics) and resting pulse seismocardiography via smartphone accelerometer.</p>
+          <div class="card-tags">
+            <span class="tag">Cloudflare Worker</span>
+            <span class="tag">Pyodide</span>
+            <span class="tag">PWA</span>
+            <span class="tag">FFT DSP</span>
+          </div>
+        </div>
+        <a class="btn btn-green" href="https://car-vibration-analyzer.memory1024.workers.dev" target="_blank">🚀 Launch App</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">📖 Beekeeping Encyclopedia</div>
+          <p class="card-desc">Ukrainian translation and publication of A.I. Root's classic masterpiece 'The ABC and XYZ of Bee Culture' compiled cleanly with Typst engine.</p>
+          <div class="card-tags">
+            <span class="tag">Typst</span>
+            <span class="tag">Translation</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+        </div>
+        <a class="btn" href="https://babych.github.io/books_translating/" target="_blank">📖 View Project</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">🕹️ Playground & Arcade Demos</div>
+          <p class="card-desc">Collection of zero-hop and 1-shot procedural recreations (Super Mario Bros NES, Atari Breakout 1976 Arcade) and algorithms.</p>
+          <div class="card-tags">
+            <span class="tag">Canvas HTML5</span>
+            <span class="tag">Web Audio</span>
+            <span class="tag">Generative</span>
+          </div>
+        </div>
+        <a class="btn" href="/playground/">🎮 Open Playground</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-title">🐄 Dairy Farm Portal</div>
+          <p class="card-desc">Modern herd management system architecture and cloud portal with advanced reverse-engineered analytics.</p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data Architecture</span>
+            <span class="tag">Cloud Portal</span>
+          </div>
+        </div>
+        <a class="btn" href="https://github.com/babych/dairy-farm-portal" target="_blank">🐙 GitHub Repo</a>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 Dmytro Babych &bull; Hosted on GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
